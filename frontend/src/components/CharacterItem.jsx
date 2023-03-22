@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import './CharacterCards.css';
 
 
@@ -13,7 +14,7 @@ function CharacterItem({ character }) {
   const [height,] = useState(character.height)
   const [mass,] = useState(character.mass);
   const [gender,] = useState(character.gender);
-  const [characters, setCharacters] = useState([])
+  const [, setCharacters] = useState([])
 
 
   const handleDelete = async (id) => {
@@ -44,7 +45,10 @@ function CharacterItem({ character }) {
       <p>Height: {height} cm</p>
       <p>Mass: {mass} kg</p>
       <p>Gender: {gender}</p>
-      <button onClick={() => handleDelete(character._id)}>Delete</button>
+      <Link to={`/update/${character._id}`}>
+        <button type="button">Edit</button>
+      </Link>
+      <button type="button" onClick={() => handleDelete(character._id)}>Delete</button>
     </div>
   )
 }
