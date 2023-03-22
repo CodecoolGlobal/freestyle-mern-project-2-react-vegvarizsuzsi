@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+.navbar-container {
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar-container a {
+    float: left;
+    color: #ffe81f;
+    text-align: center;
+    padding: 0.5rem 5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.navbar-container a:hover {
+    color: rgb(252, 248, 248);
+}
+
+.navbar-pic {
+    height: 6rem;
+    float: left;
+    padding: 0.3rem 4rem;
+    margin-left: 2rem;
+    margin-right: 15rem;
+}
