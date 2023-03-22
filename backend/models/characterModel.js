@@ -6,7 +6,8 @@ const peopleSchema = new mongoose.Schema({
     birthYear: String,
     height: String,
     mass: String,
-    gender: String
+    gender: String,
+    img: String
 });
 
 const People = model('Character', peopleSchema);

@@ -66,10 +66,12 @@ function CharacterForm({ character, onSave, onCancel, disabled }) {
             <div className="control">
                 <label htmlFor="img">Image:</label>
                 <input
-                    defaultValue={character ? character.img : null}
+                    defaultValue={character ? "placeholder.jpg" : null}
                     name="img"
                     id="img"
-                />
+                    type="url"
+                    
+                    />
             </div>
 
             <div className="buttons">
@@ -83,6 +85,7 @@ function CharacterForm({ character, onSave, onCancel, disabled }) {
             </div>
         </form>
     );
+    
 };
 
 export default CharacterForm

@@ -14,6 +14,8 @@ function CharacterItem({ character }) {
   const [height,] = useState(character.height)
   const [mass,] = useState(character.mass);
   const [gender,] = useState(character.gender);
+  const [img,] = useState(character.img);
+  console.log(img);
   const [, setCharacters] = useState([])
 
 
@@ -39,7 +41,12 @@ function CharacterItem({ character }) {
 
   return (
     <div className="card">
-      <img src='placeholder.jpg' alt='this is not' />
+      <img src="placeholder.jpg" alt='this is not'
+        style={{
+          resizeModel: "cover",
+          height: 200,
+          width: 150
+        }} />
       <h2>{name}</h2>
       <p>Birth Year: {birth_year}</p>
       <p>Height: {height} cm</p>
