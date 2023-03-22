@@ -13,7 +13,7 @@ function CharacterItem({ character }) {
   const [height,] = useState(character.height)
   const [mass,] = useState(character.mass);
   const [gender,] = useState(character.gender);
-  const [setCharacters] = useState(null)
+  const [characters, setCharacters] = useState([])
 
 
   const handleDelete = async (id) => {
