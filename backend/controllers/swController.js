@@ -26,8 +26,25 @@ const getStarships = async (req, res) => {
     res.status(200).json(starship)
 }
 
+//DELETE a character
+const deleteCharacter = async (req, res) => {
+    const { id } = req.params
+    const character = await characterModel.findOneAndDelete({_id: id})
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(404).json({ error: 'No such character' })
+    }
+
+    if (!character) {
+        return res.status(400).json({error: 'No such character'})
+    }
+
+    res.status(200).json(character)
+}
+
 module.exports = {
     getCharacters,
     getPlanets,
-    getStarships
+    getStarships,
+    deleteCharacter
 }
