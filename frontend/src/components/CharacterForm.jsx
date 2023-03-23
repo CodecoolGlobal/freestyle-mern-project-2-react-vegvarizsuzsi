@@ -66,11 +66,10 @@ function CharacterForm({ character, onSave, onCancel, disabled }) {
             <div className="control">
                 <label htmlFor="img">Image:</label>
                 <input
-                    defaultValue={character ? "placeholder.jpg" : null}
+                    defaultValue={character ? character.img : null}
                     name="img"
                     id="img"
                     type="url"
-                    
                     />
             </div>
 

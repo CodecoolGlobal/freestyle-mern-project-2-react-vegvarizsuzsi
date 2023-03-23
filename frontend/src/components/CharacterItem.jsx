@@ -8,14 +8,13 @@ const deleteCharacter = (id) => {
 
 };
 
-function CharacterItem({ character }) {
-  const [name,] = useState(character.name);
+function CharacterItem({ character }) {  //characters --> nem kellenek a setterek
+  const [name,] = useState(character.name); 
   const [birth_year,] = useState(character.birth_year);
   const [height,] = useState(character.height)
   const [mass,] = useState(character.mass);
   const [gender,] = useState(character.gender);
-  const [img,] = useState(character.img);
-  console.log(img);
+  const [img,] = useState('placeholder.jpg'); 
   const [, setCharacters] = useState([])
 
 
@@ -41,13 +40,13 @@ function CharacterItem({ character }) {
 
   return (
     <div className="card">
-      <img src="placeholder.jpg" alt='this is not'
+      <img src={img} alt='this is not'
         style={{
           resizeModel: "cover",
           height: 200,
           width: 150
         }} />
-      <h2>{name}</h2>
+      <h2>{name}</h2>     {/*  map-elés utána csak ch.name ...  */}
       <p>Birth Year: {birth_year}</p>
       <p>Height: {height} cm</p>
       <p>Mass: {mass} kg</p>

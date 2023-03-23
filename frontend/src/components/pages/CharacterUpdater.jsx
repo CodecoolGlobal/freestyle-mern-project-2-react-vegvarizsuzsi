@@ -37,7 +37,7 @@ function CharacterUpdater() {
         updateCharacter(character)
         .then(() => {
             setUpdateLoading(false)
-            navigate("/")
+            navigate("/characters")
         })
     }
     console.log(character)
