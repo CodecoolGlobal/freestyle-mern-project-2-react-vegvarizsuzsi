@@ -5,26 +5,36 @@ const {
     getPlanets,
     getStarships,
     deleteCharacter,
+    deletePlanet,
+    deleteStarship,
     getCharacter,
+    getPlanet,
+    getStarship,
     updateCharacter,
+    updatePlanet,
+    updateStarship
 } = require('../controllers/swController')
 
 const router = express.Router()
 
-//GET all characters
+//GET all characters, planets, starships
 router.get('/characters/', getCharacters);
-
-router.get('/characters/:id', getCharacter)
-
-//GET all planets
 router.get('/planets/', getPlanets);
-
-//GET all starships
 router.get('/starships/', getStarships);
 
-router.patch('/characters/:id', updateCharacter)
+//GET a character, a planet, a starship
+router.get('/characters/:id', getCharacter)
+router.get('/planets/:id', getPlanet)
+router.get('/starships/:id', getStarship)
 
-//DELETE character
+//UPDATE a character, a planet, a starship
+router.patch('/characters/:id', updateCharacter)
+router.patch('/planets/:id', updatePlanet)
+router.patch('/starship/:id', updateStarship)
+
+//DELETE character, planet, starship
 router.delete('/characters/:id', deleteCharacter)
+router.delete('/planets/:id', deletePlanet)
+router.delete('/starships/:id', deleteStarship)
 
 module.exports = router

@@ -6,7 +6,8 @@ const planetSchema = new mongoose.Schema({
     diameter: String,
     climate: String,
     terrain: String,
-    population: String
+    population: String,
+    img: String
 });
 
 const Planet = model('Planet', planetSchema);

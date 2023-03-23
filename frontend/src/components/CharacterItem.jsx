@@ -53,7 +53,7 @@ function CharacterItem({ character }) {  //characters --> nem kellenek a settere
         <p>Height: {height} cm</p>
         <p>Mass: {mass} kg</p>
         <p>Gender: {gender}</p>
-        <Link to={`/update/${character._id}`}>
+        <Link to={`/characters/update/${character._id}`}>
           <button type="button">Edit</button>
         </Link>
         <button type="button" onClick={() => handleDelete(character._id)}>Delete</button>

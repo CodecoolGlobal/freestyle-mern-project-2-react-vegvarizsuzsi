@@ -6,7 +6,8 @@ const starshipSchema = new mongoose.Schema({
     cost_in_credits: String,
     length: String,
     passengers: String,
-    starship_class: String
+    starship_class: String,
+    img: String
 });
 
 const Starship = model('Starship', starshipSchema);

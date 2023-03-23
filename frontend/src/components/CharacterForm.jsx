@@ -31,15 +31,6 @@ function CharacterForm({ character, onSave, onCancel, disabled }) {
             </div>
 
             <div className="control">
-                <label htmlFor="birth">Birth year:</label>
-                <input
-                    defaultValue={character ? character.birthYear : null}
-                    name="birthyear"
-                    id="birthyear"
-                />
-            </div>
-
-            <div className="control">
                 <label htmlFor="height">Height:</label>
                 <input
                     defaultValue={character ? character.height : null}
@@ -70,7 +61,7 @@ function CharacterForm({ character, onSave, onCancel, disabled }) {
                     name="img"
                     id="img"
                     type="url"
-                    />
+                />
             </div>
 
             <div className="buttons">
@@ -84,7 +75,7 @@ function CharacterForm({ character, onSave, onCancel, disabled }) {
             </div>
         </form>
     );
-    
+
 };
 
 export default CharacterForm
