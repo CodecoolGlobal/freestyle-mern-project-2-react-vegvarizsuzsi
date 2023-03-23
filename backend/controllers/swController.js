@@ -124,7 +124,7 @@ const updateStarship = async (req, res) => {
         return res.status(404).json({ error: 'No such id' })
     }
 
-    const starship = await planetModel.findByIdAndUpdate({ _id: id }, { ...req.body });
+    const starship = await starshipModel.findByIdAndUpdate({ _id: id }, { ...req.body });
 
     if (!starship) {
         return res.status(404).json({ error: 'No such id' })
@@ -169,7 +169,7 @@ const deletePlanet = async (req, res) => {
 //DELETE a starship
 const deleteStarship = async (req, res) => {
     const { id } = req.params
-    const starship = await planetModel.findOneAndDelete({ _id: id })
+    const starship = await starshipModel.findOneAndDelete({ _id: id })
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
         return res.status(404).json({ error: 'No such starship' })

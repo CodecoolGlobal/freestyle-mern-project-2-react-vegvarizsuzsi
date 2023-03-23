@@ -7,6 +7,7 @@ import CharacterUpdater from './components/pages/CharacterUpdater';
 import WelcomeComponent from './components/Navbar';
 import Footer from './components/Footer';
 import PlanetUpdater from './components/pages/PlanetUpdater';
+import StarshipUpdater from './components/pages/StarshipUpdater';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path='/starships' element={<Starship />} />
             <Route path='/characters/update/:id' element={<CharacterUpdater />} />
             <Route path='/planets/update/:id' element={<PlanetUpdater />} />
+            <Route path='/starships/update/:id' element={<StarshipUpdater />} />
           </Routes>
         </div>
         <Footer /> 

@@ -30,7 +30,7 @@ router.get('/starships/:id', getStarship)
 //UPDATE a character, a planet, a starship
 router.patch('/characters/:id', updateCharacter)
 router.patch('/planets/:id', updatePlanet)
-router.patch('/starship/:id', updateStarship)
+router.patch('/starships/:id', updateStarship)
 
 //DELETE character, planet, starship
 router.delete('/characters/:id', deleteCharacter)
