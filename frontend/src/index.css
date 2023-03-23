@@ -11,3 +11,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+form {
+  display: grid;
+  font-size: 1.2rem;
+  padding: 2.5cm 5cm 5cm 5cm;
+}
+  
+
+.control {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.buttons {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.control input,
+.control select {
+  font-size: 1.2rem;
+  padding: 0.2rem;
+}
+
+.control .checkbox,
+.control .radio {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+button {
+  padding: 1rem 1.7rem;
+  margin-right: 1rem;
+}
+
+.grow {
+  flex: 1;
+}
+
+
+button {
+  padding: 0.2rem 1rem;
+  margin: 0.1rem;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  outline: rgb(99, 151, 254);
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+}
+
+button:hover {
+  border-color: rgba(239, 232, 19, 0.958);
+}
+
+.footer-pic {
+  display: flex;
+  width: 5cm;
+  height: 6cm;
+  position: absolute;    
+  right: 200px;
+
+}
+
+
+
+
+

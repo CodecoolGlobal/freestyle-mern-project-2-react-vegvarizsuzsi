@@ -48,7 +48,7 @@ function CharacterUpdater() {
                 character={character}
                 onSave={handleUpdateCharacter}
                 disabled={updateLoading}
-                onCancel={() => navigate("/")} />
+                onCancel={() => navigate("/characters")} />
 
         </>
     )

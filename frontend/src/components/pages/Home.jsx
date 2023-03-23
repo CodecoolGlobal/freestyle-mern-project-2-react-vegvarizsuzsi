@@ -1,7 +1,7 @@
 import WelcomeComponent from '../Navbar';
 import ImageSlider from "../ImageSlider";
 import { sliderData } from "../ImageSliderDB";
-import Footer from '../Footer';
+// import Footer from '../Footer';
 import Cards from '../Cards';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
          <WelcomeComponent />  
           <ImageSlider slides={sliderData} />
           <Cards />
-          <Footer /> 
+          {/* <Footer />  */}
         </>
     )
 }

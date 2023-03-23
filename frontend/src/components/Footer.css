@@ -38,17 +38,9 @@
 
 .website-rights {
     color: #ffe81f;
-    margin-bottom: 16px;
-}
+    margin-bottom: 16px;}
 
-.footer-pic {
-    display: flex;
-    width: 5cm;
-    height: 6cm;
-    position: absolute;    
-    right: 200px;
 
-}
 
 .footer-pic:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
