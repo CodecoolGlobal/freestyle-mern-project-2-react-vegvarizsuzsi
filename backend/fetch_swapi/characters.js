@@ -27,7 +27,7 @@ async function getPeople(id) {
     for (let i = 0; i < response.results.length; i++) {
         const people = new People({
             name: response.results[i].name,
-            birthYear: response.results[i].birthYear,
+            birthYear: response.results[i].birth_year,
             height: response.results[i].height,
             mass: response.results[i].mass,
             gender: response.results[i].gender

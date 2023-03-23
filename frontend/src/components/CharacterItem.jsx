@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import './CharacterCards.css';
+
 
 
 const deleteCharacter = (id) => {
@@ -7,13 +9,14 @@ const deleteCharacter = (id) => {
 
 };
 
-function CharacterItem({ character }) {
+function CharacterItem({ character }) {  //characters --> nem kellenek a setterek
   const [name,] = useState(character.name);
-  const [birth_year,] = useState(character.birth_year);
+  
   const [height,] = useState(character.height)
   const [mass,] = useState(character.mass);
   const [gender,] = useState(character.gender);
-  const [characters, setCharacters] = useState([])
+  const [img, setImg] = useState(character.img);
+  const [, setCharacters] = useState([])
 
 
   const handleDelete = async (id) => {
@@ -37,15 +40,29 @@ function CharacterItem({ character }) {
   }
 
   return (
-    <div className="card">
-      <img src='placeholder.jpg' alt='this is not' />
-      <h2>{name}</h2>
-      <p>Birth Year: {birth_year}</p>
-      <p>Height: {height} cm</p>
-      <p>Mass: {mass} kg</p>
-      <p>Gender: {gender}</p>
-      <button onClick={() => handleDelete(character._id)}>Delete</button>
-    </div>
+   
+
+      <div className="card">
+        <img src={img} alt='' className="img"
+          style={{
+            resizeModel: "cover",
+            height: 200,
+            width: 170
+          }} />
+        <h2>{name}</h2>     {/*  map-elés utána csak ch.name ...  */}      
+        <p>Height: {height} cm</p>
+        <p>Mass: {mass} kg</p>
+        <p>Gender: {gender}</p>
+        <Link to={`/update/${character._id}`}>
+          <button type="button">Edit</button>
+        </Link>
+        <button type="button" onClick={() => handleDelete(character._id)}>Delete</button>
+      </div>
+
+    
+
+
+
   )
 }
 

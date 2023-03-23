@@ -17,7 +17,7 @@
     right: 2rem;
     font-size: 5rem;
     color: black;
-    z-index: 10;
+    z-index: 2;
     cursor: pointer;
     user-select: none;
     margin-right: 10px;
@@ -30,7 +30,7 @@
     left: 2rem;
     font-size: 5rem;
     color: black;
-    z-index: 10;
+    z-index: 2;
     cursor: pointer;
     user-select: none;
     margin-left: 10px;
