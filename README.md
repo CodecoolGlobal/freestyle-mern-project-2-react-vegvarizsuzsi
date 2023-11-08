@@ -105,8 +105,10 @@ To get started with the MERN App, follow these steps:
 <!-- CONTACT -->
 ## Contact
 
-Zsuzsi Végvári - [@Zsuzsi Végvári_LinkedIn](https://www.linkedin.com/in/zsuzsiv%C3%A9gv%C3%A1ri/)  
+Zsuzsi Végvári - [@Zsuzsi Végvári_LinkedIn](https://www.linkedin.com/in/zsuzsiv%C3%A9gv%C3%A1ri/)
+
 Boglárka Bakos - [@Boglárka Bakos_LinkedIn](https://linkedin.com/in/boglarka-bakos)
+
 Timea Tamasi - [@Timea Tamasi_LinkedIn](https://www.linkedin.com/in/timea-tamasi/)
 
 
