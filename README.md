@@ -70,26 +70,26 @@ The following technologies were used during the project:
 To get started with the MERN App, follow these steps:
 
 1. Clone the repository
-   ```sh
-   git clone git@github.com:CodecoolGlobal/freestyle-mern-project-2-react-vegvarizsuzsi.git
-   ```
+    ```sh
+    git clone git@github.com:CodecoolGlobal/freestyle-mern-project-2-react-vegvarizsuzsi.git
+    ```
 2. Change directory to backend and add executable permisson to entrypoint.sh
-  ```sh
-   cd backend
-   chmod +x entrypoint.sh
-   ```
+    ```sh
+    cd backend
+    chmod +x entrypoint.sh
+    ```
 3. Stay in the backend directory and change .env.sample file name to .env
-  ```sh
-   mv .env.sample .env
-   ```
+    ```sh
+    mv .env.sample .env
+    ```
 4. Go back to the main directory
-  ```sh
-   cd ..
-   ```
+    ```sh
+    cd ..
+    ```
 5. Start the project
-   ```sh
-   docker compose up --build
-   ```
+    ```sh
+    docker compose up --build
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
