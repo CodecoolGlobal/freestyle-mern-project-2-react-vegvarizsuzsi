@@ -96,7 +96,16 @@ To get started with the MERN App, follow these steps:
 
 <!-- FEATURES -->
 ## Features
-//TODO
+
+**`Star Wars Image Slider:`** Enjoy a visually immersive experience with an image slider that allows you to seamlessly browse through Star Wars pictures.
+
+**`Character Exploration:`** Navigate through an extensive database offering detailed insights into every character within the Star Wars saga.
+
+**`Starship and Planet Catalog:`** Explore the galaxy's diverse array of starships and planets with a catalog, providing detailed information on each ship.
+
+**`Character Image Management:`** Personalize your Star Wars journey by adding and organizing pictures to characters.
+
+**`Edit and Delete Functionality:`**  Take command of your Star Wars image collection with user-friendly editing and deletion features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
